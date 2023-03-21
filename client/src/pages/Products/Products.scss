@@ -3,7 +3,20 @@
 	display: flex;
 
 	.left{
-		flex: 1;
+	flex: 1;
+    position: sticky;
+    height: 100%;
+    top: 50px;
+
+    .filterItem{
+    	margin-bottom: 30px;
+
+    	h2{
+    		font-weight: 400;
+    		margin-bottom: 20px;
+    	}
+    }
+
 	}
 
 	.right{

@@ -7,7 +7,7 @@ import './Home.scss'
 
 const Home = () => {
 	return (
-		<div>
+		<div className='home'>
 			<Slider />
 			<FeaturedProducts type='featured'/>
 			<Categories />

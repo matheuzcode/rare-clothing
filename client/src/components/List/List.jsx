@@ -31,8 +31,7 @@ const List = () => {
 			isNew: false,
 			oldPrice: 19,
 			price: 12,
-		},
-		
+		},	
 		{
 			id: 4,
 			img: "https://images.pexels.com/photos/11931374/pexels-photo-11931374.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
@@ -42,6 +41,7 @@ const List = () => {
 			oldPrice: 19,
 			price: 12,
 		},
+
 	]
 
 	return (
