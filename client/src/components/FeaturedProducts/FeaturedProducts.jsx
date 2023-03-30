@@ -1,48 +1,31 @@
-import React from 'react'
-import './FeaturedProducts.scss'
-import Card from '../Card/Card.jsx'
+import React,{useState, useEffect} from 'react';
+import './FeaturedProducts.scss';
+import Card from '../Card/Card.jsx';
+import axios from 'axios';
 
 const FeaturedProducts = ({type}) => {
 
-	const data = [
-		{
-			id: 1,
-			img: "https://images.pexels.com/photos/9286361/pexels-photo-9286361.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-			img2: "https://images.pexels.com/photos/9286315/pexels-photo-9286315.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-			title: "Yellow Shirt",
-			isNew: true,
-			oldPrice: 19,
-			price: 12,
-		},
-		{
-			id: 2,
-			img: "https://images.pexels.com/photos/8973454/pexels-photo-8973454.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-			img2: "https://images.pexels.com/photos/8973479/pexels-photo-8973479.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-			title: "Bomber Jacket",
-			isNew: true,
-			oldPrice: 19,
-			price: 12,
-		},
-		{
-			id: 3,
-			img: "https://images.pexels.com/photos/14565973/pexels-photo-14565973.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-			img2: "https://images.pexels.com/photos/14565974/pexels-photo-14565974.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-			title: "Glass",
-			isNew: false,
-			oldPrice: 19,
-			price: 12,
-		},
-		
-		{
-			id: 4,
-			img: "https://images.pexels.com/photos/11931374/pexels-photo-11931374.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-			img2: "https://images.pexels.com/photos/11931385/pexels-photo-11931385.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-			title: "Dress",
-			isNew: false,
-			oldPrice: 19,
-			price: 12,
-		},
-	]
+	const [data, setData] = useState([]);
+
+	useEffect(()=>{
+		const fetchData = async () => {
+			try{
+				const res = await axios.get(
+					process.env.REACT_APP_API_URL + `/products?populate=*&[filters][type][$eq]=${type}`,
+					{
+						headers:{
+							Authorization:"bearer "+ process.env.REACT_APP_API_TOKEN,
+						},
+					}
+				);
+				setData(res.data.data)
+				console.log(res.data.data)
+			}catch(err){
+				console.log(err);
+			}
+		};
+		fetchData();
+	}, []);
 	
 	return (
 		<div className='featuredProducts'>
