@@ -3,30 +3,7 @@ import './Cart.scss'
 import DeleteOutlinedIcon from "@mui/icons-material/DeleteOutlined";
 
 const Cart = () => {
-
-	const data = [
-		{
-			id: 1,
-			img: "https://images.pexels.com/photos/9286361/pexels-photo-9286361.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-			img2: "https://images.pexels.com/photos/9286315/pexels-photo-9286315.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-			title: "Yellow Shirt",
-			desc: "Yellow Shirt",
-			isNew: true,
-			oldPrice: 19,
-			price: 12,
-		},
-		{
-			id: 2,
-			img: "https://images.pexels.com/photos/8973454/pexels-photo-8973454.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-			img2: "https://images.pexels.com/photos/8973479/pexels-photo-8973479.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-			title: "Bomber Jacket",
-			desc: "Bomber Jacket",
-			isNew: true,
-			oldPrice: 19,
-			price: 12,
-		},
-	]
-
+	
 	return (
 		<div className='cart'>
 			<h1>Products in your cart</h1>
