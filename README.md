@@ -1,6 +1,6 @@
 # Rare Clothing
 
-Rare Clothing is a clothing eccomerce project. In the development of the front end, redux toolkit was used to store the states so that the shopping cart can be viewed at the same time by all components in a shared way. In the Back-End, Strapi was used to create the REST API for the store items, redux persist to store the data when updating the page and the Stripe platform to make the payment.
+Rare Clothing is a clothing eccomerce project. In the development of the front-end, redux toolkit was used to store the states so that the shopping cart can be viewed at the same time by all components in a shared way. In the back-end, Strapi was used to create the REST API for the store items, redux persist to store the data when updating the page and the Stripe platform to make the payment.
 
 <div>
   <img src="https://user-images.githubusercontent.com/98724767/230854987-8eaea1d1-0e2a-419b-8faa-8adbdf660238.png" />
