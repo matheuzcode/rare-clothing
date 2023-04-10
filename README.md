@@ -37,7 +37,7 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 ## Languages and Technologies used :books:
 - HTML
-- CSS
+- SCSS
 - JavaScript
 - React
 - Redux Toolkit
