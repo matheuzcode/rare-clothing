@@ -21,6 +21,17 @@ const Product = () => {
 		<div className='product'>
 			{loading ? "loading" : (<>
 			<div className='left'>
+					<div className="slider-wrapper">
+						<div className="slider">
+							<img id="slide-1" src={process.env.REACT_APP_UPLOAD_URL +data?.attributes?.img?.data?.attributes?.url}/>
+							<img id="slide-2" src={process.env.REACT_APP_UPLOAD_URL +data?.attributes?.img2?.data?.attributes?.url}/>
+						</div>
+						<div class="slider-nav">
+							<a href="#slide-1"></a>
+							<a href="#slide-2"></a>
+						</div>
+					</div>
+				
 				<div className='images'>
 					<img src={process.env.REACT_APP_UPLOAD_URL +data?.attributes?.img?.data?.attributes?.url} alt="" onClick={e=>setSelectedImg("img")}/>
 					<img src={process.env.REACT_APP_UPLOAD_URL +data?.attributes?.img2?.data?.attributes?.url} alt="" onClick={e=>setSelectedImg("img2")}/>

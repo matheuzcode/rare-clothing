@@ -3,13 +3,102 @@
 	display: flex;
 	gap: 50px;
 
+	@media screen and (max-width: 1024px){
+    	padding: 20px 12px;
+	}
+
+	@media screen and (max-width: 768px){
+    	flex-direction: column;
+	}
+
+	@media screen and (max-width: 600px){
+    	padding: 20px 0px;
+    	
+	}
+
 	.left{
 		flex: 1;
 		display: flex;
 		gap: 20px;
 
+		.slider-wrapper{
+			@media screen and (min-width: 1025px){
+    			display: none;
+			}
+
+			position: relative;
+			max-width: 100%;
+			margin: 0 auto;
+
+			.slider-nav{
+				display: flex;
+				position: absolute;
+				bottom: 1.5rem;
+				left: 50%;
+				column-gap: 10px;
+				transform: translateX(-50%);
+				z-index: 1;
+
+				@media screen and (min-width: 769px) and (max-width: 1024px) {
+					bottom: 4rem;
+				}
+
+				a{
+					width: 8px;
+					height: 8px;
+					background-color: white;
+					column-gap: 10px;
+					border-radius: 50%;
+					opacity: 0.75;
+					transition: opacity ease 250ms;
+				}
+
+				a:hover {
+					opacity: 1;
+				}
+			}
+
+			.slider{
+				display: flex;
+				overflow-x: auto;
+				width: auto;
+				scroll-snap-type: x mandatory;
+				scroll-behavior: smooth;
+
+				@media screen and (max-width: 1024px){
+    				height: 40rem;
+				}
+
+				@media screen and (max-width: 768px){
+    				height: 60rem;
+				}
+
+				@media screen and (max-width: 644px){
+    				height: 44rem;
+				}
+
+				@media screen and (max-width: 425px){
+    				height: 34rem;
+				}
+
+				img {
+					flex: 1 0 100%;
+					scroll-snap-align: start;
+					object-fit: cover;
+					width: 100%;
+    				height: auto;
+				}
+			}
+		}
+
+
+
 		.images{
 			flex: 1;
+
+			@media screen and (max-width: 1024px){
+    			display: none;
+			}
 
 			img{
 				width: 100%;
@@ -21,6 +110,10 @@
 		}
 		.mainImg{
 			flex: 5;
+
+			@media screen and (max-width: 1024px){
+    			display: none;
+			}
 
 			img{
 				width: 100%;
@@ -35,16 +128,33 @@
 		flex-direction: column;
 		gap: 30px;
 
+		@media screen and (max-width: 600px){
+    		padding: 0px 20px;
+    	
+		}
+
 		.price{
 			font-size: 30px;
 			color: #2879fe;
 			font-weight: 500;		
 		}
 
+		h1{
+			font-size: 20px;
+		}
+
+		.price {
+			font-size: 24px;
+		}
+
 		p{
 			font-size: 18px;
 			font-weight: 300;
 			text-align: justify;
+
+			@media screen and (max-width: 768px){
+    			font-size: 17px;
+			}
 		}
 
 		.quantity{
@@ -60,6 +170,11 @@
 			    justify-content: center;
 			    cursor: pointer;
 			    border: none;
+
+			    @media screen and (max-width: 768px){
+    				width: 40px;
+			    	height: 40px;
+				}
 			}
 		}
 
@@ -87,6 +202,10 @@
 	        gap: 10px;
 	        color: #2879fe;
 	        font-size: 14px;
+
+	        @media screen and (max-width: 768px){
+    			font-size: 12px;
+			}
 	      }
 	    }
 
@@ -97,6 +216,10 @@
 	      color: gray;
 	      font-size: 14px;
 	      margin-top: 30px;
+
+	      @media screen and (max-width: 768px){
+    			font-size: 13px;
+			}
 
 	      hr{
 	        width: 200px;

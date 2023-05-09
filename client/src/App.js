@@ -11,14 +11,17 @@ import Products from './pages/Products/Products.jsx';
 import Footer from './components/Footer/Footer.jsx'
 import Navbar from './components/Navbar/Navbar.jsx'
 
+import {Link} from "react-router-dom";
+
 import "./App.scss";
 
 const Layout = () => {
+  
   return (
     <div className="app">
-      <Navbar/>
-      <Outlet/>
-      <Footer/>
+        <Navbar />
+        <Outlet/>
+        <Footer/>
     </div> 
   )
 }

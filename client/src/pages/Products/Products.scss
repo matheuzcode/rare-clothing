@@ -1,6 +1,12 @@
 .products {
 	padding: 30px 50px;
-	display: flex;
+	display: grid;
+    grid-template-columns: 1fr 4fr;
+
+	@media screen and (max-width: 1200px){
+		display: grid;
+    	grid-template-columns: 1fr;
+	}
 
 	.left{
 	flex: 1;
@@ -8,12 +14,35 @@
     height: 100%;
     top: 50px;
 
+    @media screen and (max-width: 1200px){
+		display: flex;
+		justify-content: space-between;
+	}
+
+	@media screen and (max-width: 650px){
+		flex-direction: column;
+	}
+
     .filterItem{
     	margin-bottom: 30px;
 
     	h2{
     		font-weight: 400;
     		margin-bottom: 20px;
+
+    		 @media screen and (max-width: 1024px){
+				font-size: 18px;
+			}
+    	}
+
+    	label {
+    		@media screen and (max-width: 1024px){
+				font-size: 15px;
+			}
+    	}
+
+    	input{
+    		margin-right: 10px;
     	}
     }
 
@@ -21,6 +50,13 @@
 
 	.right{
 		flex: 3;
+
+		.catImg {
+			@media screen and (max-width: 1200px){
+				display: none;
+			}
+		}
+
 
 		.catImg{
 			width: 100%;

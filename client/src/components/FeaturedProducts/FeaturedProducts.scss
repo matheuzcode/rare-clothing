@@ -1,27 +1,71 @@
 .featuredProducts{
 	margin: 100px 200px;
 
+	@media screen and (max-width: 1024px){
+		margin: 100px 100px;
+	}
+
+	@media screen and (max-width: 768px){
+		margin: 100px 30px;
+	}
+
+	@media screen and (max-width: 425px){
+		margin: 100px 40px;
+	}
+
 	.top{
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
 		margin-bottom: 50px;
 
+		@media screen and (max-width: 1024px){
+			flex-direction: column;
+			
+		}
+
 		h1 {
 			flex: 2;
 			text-transform: capitalize;
+
+			@media screen and (max-width: 1024px){
+				margin-bottom: 20px;
+			}
+
+			@media screen and (max-width: 425px){
+				font-size: 25px;
+			}
 		}
 
 		p{
 			flex: 3;
 			color: gray;
+			text-align: justify;
+
+			@media screen and (max-width: 768px){
+				font-size: 13px;
+			}
+
+			
 		}
 	}
 
 	.bottom{
 			display: flex;
+			flex-wrap: wrap;
 			justify-content: center;
-			gap: 40px;
+			gap: 20px;
+
+			.card{
+				width: 280px;
+    			height: 500px;
+    			
+    		.image{
+    			@media screen and (max-width: 1400px){
+					height: 400px;
+				}
+    		}
+			}
 	}
 
 }
