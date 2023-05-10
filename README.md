@@ -9,6 +9,9 @@ Rare Clothing is an e-commerce for men's and women's clothing. In the developmen
 <div>
   <img src="https://user-images.githubusercontent.com/98724767/230855136-a3343c68-2b68-47c4-bc65-a9ae43923ec7.png" />
 </div>
+<div>
+  <img src="https://user-images.githubusercontent.com/98724767/230855184-a5018de4-7fd7-49f9-9e35-feaf0af1ebc7.png" />
+</div>
 
 # Project features :hammer: 
 
@@ -16,8 +19,6 @@ Rare Clothing is an e-commerce for men's and women's clothing. In the developmen
 - `Search filter:` With the search filter it is possible to search only the items of the selected category and optimize the search time.
 - `Select the item:` On the selected specific item page, it is possible to define the quantity of the item and add it to the shopping cart. 
 - `Shopping cart:` By clicking on the shopping cart icon, it is possible to access it from any page of the application, in addition to the functionality of being able to see and delete items that have been added to the cart.
- <img src="https://user-images.githubusercontent.com/98724767/230855184-a5018de4-7fd7-49f9-9e35-feaf0af1ebc7.png" />
-
 - `Payment:` To implement the payment method, the Stripe API was used.
 - `Responsive Design:` 
 
