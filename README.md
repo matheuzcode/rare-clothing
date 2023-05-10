@@ -12,6 +12,13 @@ Rare Clothing is an e-commerce for men's and women's clothing. In the developmen
 <div style="justify-content: center;">
   <img src="https://user-images.githubusercontent.com/98724767/230855184-a5018de4-7fd7-49f9-9e35-feaf0af1ebc7.png" />
 </div>
+<hr/>
+<h3>Responsive Design</h3>
+
+
+https://github.com/matheuzcode/rare-clothing/assets/98724767/17412899-4a93-47da-bb13-84c9aa188e70
+
+
 
 ## How to acess the project
 
