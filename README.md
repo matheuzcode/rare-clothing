@@ -10,7 +10,7 @@ Rare Clothing is an e-commerce for men's and women's clothing. In the developmen
   <img src="https://user-images.githubusercontent.com/98724767/230855136-a3343c68-2b68-47c4-bc65-a9ae43923ec7.png" />
 </div>
 
-# Funcionalidades do projeto :hammer: 
+# Project features :hammer: 
 
 - `Side navigation menu:` Side navigation menu when the screen is in a reduced size.
 - `Search filter:` With the search filter it is possible to search only the items of the selected category and optimize the search time.
