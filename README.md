@@ -20,6 +20,13 @@ https://github.com/matheuzcode/rare-clothing/assets/98724767/17412899-4a93-47da-
 
 
 
+# :hammer: Funcionalidades do projeto
+
+- `Side navegation menu`: Menu de navegação lateral quando a tela está em um tamanho reduzido.
+- `Filtro de pesquisa`: Com o filtro é possivel pesquisar apenas os itens da categoria selecionada e otimizar o tempo de busca.
+- `Selecionar item para compra`: Na página do item especifico selecionado é possivel definir a quantidade de unidades e adicionalo ao carrinho de compras. 
+- `Carrinho de compras`: 
+
 ## How to acess the project
 
 In the project directory, you can run:
