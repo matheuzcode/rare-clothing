@@ -47,11 +47,10 @@
 	}
 
 	.bottom{
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		align-items: center;
-		justify-content: space-between;
-		margin-top: 50px;
+		display: flex;
+	    align-items: center;
+	    justify-content: space-evenly;
+	    margin-top: 50px;
 
 		@media screen and (max-width: 1024px){
 			grid-template-columns: 1fr;

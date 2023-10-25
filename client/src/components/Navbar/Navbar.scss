@@ -20,13 +20,14 @@
 	.item{
 		display: flex;
 		align-items: center;
-		font-size: 18px;
+		font-size: 14px;
 	}
 
 	.left{
 		display: flex;
 		align-items: center;
 		gap: 25px;
+		width: 33.33%;
 
 		.item {
 			@media screen and (max-width: 768px){
@@ -49,7 +50,8 @@
 	.center{
 		font-size: 30px;
 		font-weight: bold;
-		letter-spacing: 8px;
+		width: 33.33%;
+		text-align: center;
 
 		@media screen and (max-width: 768px){
 			grid-area: center;
@@ -62,6 +64,8 @@
 		align-items: center;
 		gap: 25px;
 		position: relative;
+		width: 33.33%;
+		justify-content: flex-end;
 
 		@media screen and (max-width: 768px){
 			grid-area: right;

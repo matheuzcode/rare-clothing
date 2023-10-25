@@ -82,9 +82,6 @@ const Navbar = () => {
 						
 						<div className="icons">
 								<MenuIcon onClick={() => setOpenModal(true)} className="menuIcon"/>
-		            <SearchIcon/>
-		            <PersonOutlineOutlinedIcon/>
-		            <FavoriteBorderOutlinedIcon/>
 		            <div className="cartIcon" onClick={() => setOpen(!open)}>
 		              <ShoppingCartOutlinedIcon/>
 		              <span>{products.length}</span>
