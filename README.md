@@ -9,11 +9,24 @@ Rare Clothing is an e-commerce for men's and women's clothing. In the developmen
 <div>
   <img src="https://user-images.githubusercontent.com/98724767/230855136-a3343c68-2b68-47c4-bc65-a9ae43923ec7.png" />
 </div>
-<div style="justify-content: center;">
+<div>
   <img src="https://user-images.githubusercontent.com/98724767/230855184-a5018de4-7fd7-49f9-9e35-feaf0af1ebc7.png" />
 </div>
 
-## How to acess the project
+# Project features :hammer: 
+
+- `Side navigation menu:` Side navigation menu when the screen is in a reduced size.
+- `Search filter:` With the search filter it is possible to search only the items of the selected category and optimize the search time.
+- `Select the item:` On the selected specific item page, it is possible to define the quantity of the item and add it to the shopping cart. 
+- `Shopping cart:` By clicking on the shopping cart icon, it is possible to access it from any page of the application, in addition to the functionality of being able to see and delete items that have been added to the cart.
+- `Payment:` To implement the payment method, the Stripe API was used.
+- `Responsive Design:` 
+
+https://github.com/matheuzcode/rare-clothing/assets/98724767/0aa748ac-0c1e-4b7c-a8c3-48650b25b634
+
+
+
+# How to acess the project 📁
 
 In the project directory, you can run:
 
@@ -35,7 +48,7 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-## Languages and Technologies used :books:
+# Languages and Technologies used :books:
 - HTML
 - SCSS
 - JavaScript
