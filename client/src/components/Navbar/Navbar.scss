@@ -1,7 +1,3 @@
-.navbar{
-	height:80px;
-
-}
 
 .wrapper{
 	padding: 10px 30px;
@@ -23,7 +19,7 @@
 		font-size: 14px;
 	}
 
-	.left{
+	.navbarCategories{
 		display: flex;
 		align-items: center;
 		gap: 25px;
@@ -32,6 +28,7 @@
 		.item {
 			@media screen and (max-width: 768px){
 				border-bottom: solid 2px black;
+
 			}
 		}
 
@@ -44,10 +41,11 @@
 		@media screen and (max-width: 768px){
 			justify-content: center;
 			grid-area: left;
+			width: auto;
 		}
 	}
 
-	.center{
+	.navbarLogo{
 		font-size: 30px;
 		font-weight: bold;
 		width: 33.33%;
@@ -55,11 +53,13 @@
 
 		@media screen and (max-width: 768px){
 			grid-area: center;
+			width: auto;
+			justify-self: flex-start;
 		}
 		
 	}
 
-	.right{
+	.navbarSectionsIcon{
 		display: flex;
 		align-items: center;
 		gap: 25px;
@@ -69,11 +69,13 @@
 
 		@media screen and (max-width: 768px){
 			grid-area: right;
+			width: auto;
+			justify-self: flex-end;
 		}
 		
 	}
 
-	.rightHidden{
+	.navbarSection{
 		display: flex;
 		gap: 25px;
 		flex-direction: row;
@@ -123,7 +125,7 @@
 .navbarHidden{
 	position: relative;
 
-	.rightH {
+	.navbarHiddenSection {
 		position: absolute;
 		display: flex;
 		flex-direction: column;
@@ -136,13 +138,17 @@
 		padding: 0px 90px;
 		transition: all 0.2s ease;
 
+		@media screen and (max-width: 375px){
+			padding: 0px 55px;
+		}
+
 	}
 
-	.rightItem{
+	.navbarHiddenItems{
 		padding: 10px 10px;
 	}
 
-	.rightItem:hover{
+	.navbarHiddenItems:hover{
 		border-bottom: 2px solid black;
 		cursor: pointer;
 	}
@@ -155,6 +161,10 @@
 		cursor: pointer;
 		z-index: 2;
 		color: white;
+
+		@media screen and (max-width: 375px){
+			right: 225px;
+		}
 	}
 
 }

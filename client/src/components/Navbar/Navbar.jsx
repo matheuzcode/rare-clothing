@@ -28,17 +28,17 @@ const Navbar = () => {
 		
 		<div className="navbarHidden">
 			<CloseIcon className="close" onClick={() => setOpenModal(false)} style={openModal ? {display: 'block'} : {display: 'none'}}/>
-      <div className="rightH" style={openModal ? {right: '0px'} : {right: '-283px'}}>    
-        <div className="rightItem">
+      <div className="navbarHiddenSection" style={openModal ? {right: '0px'} : {right: '-283px'}}>    
+        <div className="navbarHiddenItems">
           <Link className="link" to="/">Homepage</Link>
         </div>
-        <div className="rightItem">
+        <div className="navbarHiddenItems">
           <Link className="link" to="/">About</Link>
         </div>
-        <div className="rightItem">
+        <div className="navbarHiddenItems">
           <Link className="link" to="/">Contact</Link>
         </div>
-        <div className="rightItem">
+        <div className="navbarHiddenItems">
           <Link className="link" to="/">Stores</Link>
         </div>
       </div>
@@ -47,47 +47,46 @@ const Navbar = () => {
 
 		<div className="navbar">
 			<div className="wrapper">
+				<div className="navbarCategories">
+					<div className="item">
+						<Link className="link" to="/products/1">Women</Link>
+					</div>
+					<div className="item">
+						<Link className="link" to="/products/2">Men</Link>
+					</div>
+					<div className="item">
+						<Link className="link" to="/products/3">Children</Link>
+					</div>							 																																 																						
+				</div>
+					
+				<div className="navbarLogo">
+					<Link className="link" to="/">RARE</Link>
+				</div>
 
-						<div className="left">
+				<div className="navbarSectionsIcon">
+					<div className="navbarSection">
 						<div className="item">
-							<Link className="link" to="/products/1">Women</Link>
+							<Link className="link" to="/">Homepage</Link>
 						</div>
 						<div className="item">
-							<Link className="link" to="/products/2">Men</Link>
+							<Link className="link" to="/">About</Link>
 						</div>
 						<div className="item">
-							<Link className="link" to="/products/3">Children</Link>
-						</div>							 																																 																						
+							<Link className="link" to="/">Contact</Link>
+						</div>
+						<div className="item">
+							<Link className="link" to="/">Stores</Link>
+						</div>
 					</div>
 					
-					<div className="center">
-						<Link className="link" to="/">RARE</Link>
-					</div>
-
-					<div className="right">
-						<div className="rightHidden">
-							<div className="item">
-								<Link className="link" to="/">Homepage</Link>
-							</div>
-							<div className="item">
-								<Link className="link" to="/">About</Link>
-							</div>
-							<div className="item">
-								<Link className="link" to="/">Contact</Link>
-							</div>
-							<div className="item">
-								<Link className="link" to="/">Stores</Link>
-							</div>
-						</div>
-						
-						<div className="icons">
-								<MenuIcon onClick={() => setOpenModal(true)} className="menuIcon"/>
-		            <div className="cartIcon" onClick={() => setOpen(!open)}>
-		              <ShoppingCartOutlinedIcon/>
-		              <span>{products.length}</span>
-		            </div>
-	          	</div>
-					</div>	
+					<div className="icons">
+							<MenuIcon onClick={() => setOpenModal(true)} className="menuIcon"/>
+	            <div className="cartIcon" onClick={() => setOpen(!open)}>
+	              <ShoppingCartOutlinedIcon/>
+	              <span>{products.length}</span>
+	            </div>
+          	</div>
+				</div>	
 				
 			</div>
 			{open && <Cart />}	
