@@ -1,7 +1,7 @@
+
 .products {
-	padding: 30px 50px;
 	display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 1fr;
 
 	@media screen and (max-width: 1200px){
 		display: grid;
@@ -9,10 +9,22 @@
 	}
 
 	.left{
-	flex: 1;
-    position: sticky;
-    height: 100%;
-    top: 50px;
+	display: flex;
+	justify-content: flex-end;
+	gap: 50px;
+	padding: 0px 50px;
+
+	.filterSelect, .filterInput{
+		cursor: pointer;
+	}
+
+	.inputItem{
+		display: flex;
+	}
+
+	.rangePrice{
+		width: 175px;
+	}
 
     @media screen and (max-width: 1200px){
 		display: flex;
@@ -28,7 +40,8 @@
 
     	h2{
     		font-weight: 400;
-    		margin-bottom: 20px;
+    		margin-bottom: 10px;
+    		font-size: 15px;
 
     		 @media screen and (max-width: 1024px){
 				font-size: 18px;
@@ -50,6 +63,7 @@
 
 	.right{
 		flex: 3;
+		padding: 0px 50px;
 
 		.catImg {
 			@media screen and (max-width: 1200px){
@@ -58,11 +72,12 @@
 		}
 
 
-		.catImg{
+		
+	}
+	.catImg{
 			width: 100%;
 			height: 300px;
 			object-fit: cover;
-			margin-bottom: 50px;
+			margin-bottom: 30px;
 		}
-	}
 }

@@ -1,4 +1,5 @@
 .cart {
+  width: 340px;
   position: absolute;
   right: 20px;
   top: 60px;
@@ -17,13 +18,14 @@
     margin-bottom: 30px;
     color: gray;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 18px;
   }
 
   .item {
-    display: flex;
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 0.2fr;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
     margin-bottom: 30px;
     img {
       width: 80px;
@@ -40,7 +42,11 @@
       p {
         color: gray;
         margin-bottom: 10px;
+        width: 157px;
         font-size: 14px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
       }
 
       .price {
@@ -50,7 +56,7 @@
 
     .delete {
       color: red;
-      font-size: 30px;
+      font-size: 25px;
       cursor: pointer;
     }
   }
@@ -59,28 +65,34 @@
     display: flex;
     justify-content: space-between;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 16px;
     margin-bottom: 20px;
   }
 
-  button {
-    width: 250px;
-    padding: 10px;
+  .cartButton {
+    padding: 12px;
     display: flex;
     align-items: center;
-    justify-content: center;
     gap: 20px;
     cursor: pointer;
     border: none;
-    background-color: #2879fe;
+    background-color: #0c0f13;
     color: white;
     font-weight: 500;
-    margin-bottom: 20px;
+    margin: auto;
+    width: 100%;
+    justify-content: center;
+    transition: background-color ease 0.5s;
+  }
+
+  .cartButton:hover {
+    background-color: #252629;
   }
 
   .reset{
     color:red;
     font-size: 12px;
     cursor: pointer;
+    margin-top: 20px;
   }
 }
